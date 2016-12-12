@@ -52,7 +52,7 @@ public class themovieDBproject {
                 //System.out.println("La peli "+film+" no existeix, contador pelis = "+numeropelis);
             }
             Pelis++;
-        }while(numeropelis<100);
+        }while(numeropelis<300);
 
 
     }
@@ -94,7 +94,7 @@ public class themovieDBproject {
 
             }
             Actores++;
-        }while(numeroActores<100);
+        }while(numeroActores<300);
     }
 
     public static void SJSActores(String cadena, ArrayList<Actores> a){
@@ -138,7 +138,7 @@ public class themovieDBproject {
                 //System.out.println("La peliActor "+peliActores+" no existeix, contador Personajes = "+numeroPA);
             }
             PeliActo++;
-        }while(numeroPA<100);
+        }while(numeroPA<300);
     }
 
     private void SJSPeliculasActores(String salida, ArrayList<PeliculasActores> pa) {

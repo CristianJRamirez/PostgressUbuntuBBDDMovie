@@ -24,23 +24,23 @@ public class createSQLite {
 
             stmt = c.createStatement();
             String sql = "CREATE TABLE if not exists Peliculas " +
-                    "(ID VARCHAR(5) PRIMARY KEY     NOT NULL," +
+                    "(ID VARCHAR(7) PRIMARY KEY     NOT NULL," +
                     " Titulo           TEXT    NOT NULL, " +
                     " FechaEstreno            VARCHAR(50))";
             stmt.executeUpdate(sql);
             sql = "CREATE TABLE if not exists Actores " +
-                    "(ID VARCHAR(5) PRIMARY KEY     NOT NULL," +
+                    "(ID VARCHAR(7) PRIMARY KEY     NOT NULL," +
                     " Nombre           TEXT    NOT NULL, " +
                     " FechaNacimiento            VARCHAR(50), " +
                     " FechaMuerte        VARCHAR(50), " +
                     " LugarNacimiento         VARCHAR(300))";
             stmt.executeUpdate(sql);
             sql = "CREATE TABLE if not exists PeliculasActores " +
-                    "(ID VARCHAR(5)      NOT NULL," +
-                    " IdPelicula           VARCHAR(5) NOT NULL, " +
-                    " IdActor            VARCHAR(5) NOT NULL, " +
-                    " Personaje        VARCHAR(150)," +
-                    " PRIMARY KEY (IdPelicula, IdActor))";
+                    "(ID VARCHAR(7)      NOT NULL," +
+                    " IdPelicula           VARCHAR(7) NOT NULL, " +
+                    " IdActor            VARCHAR(7) NOT NULL, " +
+                    " Personaje        VARCHAR(150));";//"," +
+                    //" PRIMARY KEY (IdPelicula, IdActor))";
             stmt.executeUpdate(sql);
             stmt.close();
             c.close();

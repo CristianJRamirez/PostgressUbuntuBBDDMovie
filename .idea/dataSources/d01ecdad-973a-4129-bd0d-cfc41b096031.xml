@@ -11,8 +11,8 @@
     <schema id="3" parent="1" name="public">
       <object-id>2200</object-id>
       <visible>1</visible>
-      <introspection-state-number>715</introspection-state-number>
-      <introspection-timestamp>2016-12-12.15:47:29.883</introspection-timestamp>
+      <introspection-state-number>938</introspection-state-number>
+      <introspection-timestamp>2016-12-12.16:01:57.100</introspection-timestamp>
     </schema>
     <schema id="4" parent="1" name="pg_catalog">
       <object-id>11</object-id>
@@ -38,8 +38,8 @@
       <state-number>713</state-number>
     </table>
     <table id="11" parent="3" name="peliculasactores">
-      <object-id>16423</object-id>
-      <state-number>715</state-number>
+      <object-id>16438</object-id>
+      <state-number>938</state-number>
     </table>
     <column id="12" parent="9" name="id">
       <state-number>714</state-number>
@@ -102,37 +102,23 @@
       <primary>1</primary>
     </key>
     <column id="24" parent="11" name="id">
-      <state-number>715</state-number>
+      <state-number>938</state-number>
       <mandatory>1</mandatory>
-      <data-type>varchar(5)|0</data-type>
+      <data-type>varchar(7)|0</data-type>
     </column>
     <column id="25" parent="11" name="idpelicula">
-      <state-number>715</state-number>
+      <state-number>938</state-number>
       <mandatory>1</mandatory>
-      <data-type>varchar(5)|0</data-type>
+      <data-type>varchar(7)|0</data-type>
     </column>
     <column id="26" parent="11" name="idactor">
-      <state-number>715</state-number>
+      <state-number>938</state-number>
       <mandatory>1</mandatory>
-      <data-type>varchar(5)|0</data-type>
+      <data-type>varchar(7)|0</data-type>
     </column>
     <column id="27" parent="11" name="personaje">
-      <state-number>715</state-number>
+      <state-number>938</state-number>
       <data-type>varchar(150)|0</data-type>
     </column>
-    <index id="28" parent="11" name="peliculasactores_pkey">
-      <object-id>16426</object-id>
-      <columns>idpelicula
-idactor</columns>
-      <desc-columns></desc-columns>
-      <unique>1</unique>
-    </index>
-    <key id="29" parent="11" name="peliculasactores_pkey">
-      <object-id>16427</object-id>
-      <columns>idpelicula
-idactor</columns>
-      <underlying-index>peliculasactores_pkey</underlying-index>
-      <primary>1</primary>
-    </key>
   </database-model>
 </dataSource>
